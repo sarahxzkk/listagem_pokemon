@@ -1,0 +1,124 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #ffffffad;
+    color: #333333;
+}
+
+body.modo_escuro{
+    background-color: #151515;
+    color: #f5f5f5;
+}
+
+header{  
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    box-shadow: 2px 0.5px 22px #2575b6;
+}
+
+header .logo,
+header .img_button{
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao_alterar_tema{
+    background: none;
+    border: none;  
+}
+
+header .logo:hover,
+header .img_button:hover,
+main .cartao_pokemon:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main{
+    padding: 25px;
+}
+
+.listagem_pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.cartao_pokemon{
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao_pokemon:hover{
+    background-color: #96d9d6;
+}
+
+.modo_escuro .cartao_pokemon{
+    background-color: #5e5e5e;
+}
+
+main .cartao_pokemon .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao_pokemon .informacoes span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao_pokemon .gif{
+    width: 60px;
+    height: 60px;
+}
+
+main .cartao_pokemon .tipos{
+   
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao_pokemon .tipo{
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.grama{
+    background-color: #7ac74c;
+}
+
+.veneno{
+    background-color: rgb(171, 130, 210);
+}
+
+.fogo{
+    background-color: brown;
+}
+
+.agua{
+    background-color: rgb(1, 158, 158);
+}
+
+.inseto{
+    background-color: rgb(182, 226, 5);
+}
+
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
